@@ -1,0 +1,26 @@
+<div id="header" class="nav-collapse nav-solid">
+    <!-- <div class="row clearfix"> -->
+        <div class="col-1">
+            <div id="logo">
+                <span style="font-size: x-large; font-weight: 600; font-style: italic; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">StartMyVenture</span>.in
+				<!-- <img
+					src="assets/images/logo001.png"
+					id="navigation-logo"
+					alt="Landing Page" 
+                    width="100"
+                    height="250"/> -->
+				<!--End of Navigation Logo-->
+			</div>
+
+            <nav id="nav-main" style="font-weight: 500;">
+				<ul>
+                    <li *ngFor="let menuItem of menu">
+                        <a routerLink="{{ menuItem.link }}" (click)="toggleMenu()" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{ exact: true }">{{ menuItem.title }}</a>
+                    </li>
+                </ul>
+			</nav>
+            
+        </div>
+    <!-- </div> -->
+</div>
